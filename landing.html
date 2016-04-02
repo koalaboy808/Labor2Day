@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title> Carlo Liquido </title>
+		<!-- Load stylesheets based on viewport  -->
+		<link rel="stylesheet" type="text/css" href="main-completed.css"/>
+		<link rel="stylesheet" type="text/css" media="(max-width: 450px)" href="small-completed.css"/>
+		<link rel="stylesheet" type="text/css" media="(min-width: 450px) and (max-width: 700px)" href="medium-completed.css"/>
+		<!-- Load in custom fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'/>
+	</head>
+
+	<body>
+		<header>
+			<img class="monster" src="img/monster_on_monster.png">
+			<h1 id="site-title"> Carlo Liquido </h1>
+
+			<nav id="navigation">
+				
+				<a class="nav-button" href="#projects"> Portfolio </a>
+				<a class="nav-button" href="#about"> About Me </a>
+			</nav>
+
+
+			 <!--style="width:60px;height:60px;border:0"-->
+		</header>
+
+		<div class="main-container">
+			<div>
+				<h3 class="project-title"> Education Public Report</h3>
+				<h4 class="project-subtitle"> [R] [RStudio] [ggplot] [grid] </h3>
+			</div>
+			<div id="project-1" class="project">
+				
+				<div class="project-image">
+					<a href="public_report/public_report.html">
+						<img src="img/public_report/100_school.png" alt="beautiful scenery of the wild">
+					</a>
+				</div>
+				
+				<div class="project-detail">
+					<p> Data visualization has emerged as one of my vocational joys—crafting graphs that help illuminate findings for a broader audience has been galvanizing. In this one such project, our data team at the Hawaii Department of Education (DOE) was tasked to tackle the large-scale project of creating customized reports for each of the 286 schools under the new policy framework, “Strive HI”. In previous years, the DOE had created unintelligible matrices of data. The new framework, however, required unequivocal transparency. I personally lead the development of producing comprehensive yet concise visualizations for each school. The data team challenged me to learn the programming language, R, as no one else had working knowledge of this language. Having to manipulate large-scale assessment data tested my programming abilities. I cleaned, transformed, and merged structured and semi-structured data from various sources. To tackle the problem of suppressing sensitive data and ensuring absolute accuracy, I worked closely with the DOE branch tasked to evaluate our accountability system. The end product is what you see--customized visualizations specific to each of the 286 schools in Hawaii and extensible for each year down the line. 
+					</p>
+				</div>
+			</div>
+			<a href="d3/index.html">
+				<h3 class="project-title"> Strive HI Performance</h3>
+				<h4 class="project-subtitle"> [d3] [jquery] [inveractive visualization]</h3>
+			</a>
+			<div id="project-2" class="project">
+				<div class="project-image">
+					<a href="d3/index.html">
+                    	<img src="img/d3_DOE.png" alt="d3">
+                	</a>
+				</div>
+				<div class="project-detail">
+					<p> 
+						Each year, the Hawaii Department of Education calculates the Strive HI Index Score of each school on a scale of 0 points to 400 points. The Index Score uses multiple measures of achievement, growth, readiness and achievement gaps to understand schools’ performance and progress and differentiate schools based on their individuals needs for reward, support and intervention. Based on these calculations, schools are placed in one of 5 "Classification" Steps — Recognition, Continuous Improvement, Focus, Priority and Superintendent’s Zone — as they strive for continuous improvement. However, the absolute Index Score does not alone constitute which Classification a school belongs to. For instance, a school with an above average Index score may have extremely poor Chronic Absenteeism. Irrespective of their total Index score, the school requires immediate intervention and could very well be placed in Focos or Priority. The graph demonstrates the extent of this overlap, something that had never been realized to that date. The graph also addresses the distribution of schools across year and Complex Area (ie, District).
+					</p>
+				</div>
+			</div>
+			<div>
+				<a href="public_report/growth_vs_ach.html">
+					<h3 class="project-title"> Growth vs Achievement</h3>
+					<h4 class="project-subtitle"> [Tableau] </h3>
+				</a>
+			</div>
+			<div id="project-2" class="project">
+				<div class="project-image">
+					<a href="public_report/growth_vs_ach.html">
+						<img src="img/Relationship Between Growth and Achievment by Elementary Schools.svg">
+					</a>
+				</div>
+				
+				<div class="project-detail">
+					<p>Public Schools are evaluated by a number of categories--two of the main ones being student achievement and student growth. Both play a large role in determining the overall success of the school. Achievement tests have been administered for decades. Growth scores, on the other hand, are new and little understood. They take into account how students perform against similar peers across time. Principals and teachers, however, don't but into this new analysis. Their theory is--schools with high-performing students will have higher growth while schools with "low-performing" students will have lower growth. My job was to disprove their theory using real objective data.</p>
+				</div>
+			</div>
+
+			<div>
+				<h3 class="project-title"> Life Cycle Assessment</h3>
+				<h4 class="project-subtitle"> [R] [Shiny] [rCharts] [igraph]</h3>
+			</div>
+			<div id="project-2" class="project">
+				<div class="project-image">
+					<div class="project-image-nest">
+						<a href="http://koalaboy808.shinyapps.io/sankey_shiny_endponts" target="_blank">
+							<img src="img/fundacion_bubbles.png" alt="fundacion_bubbles">
+						</a>
+					</div>
+					<div class="project-image-nest">
+						<a href="http://koalaboy808.shinyapps.io/ecobase_wine_realdata" target="_blank">
+							<img src="img/fundacion_sankey.png" alt="fundacion_sankey">
+						</a>
+					</div>
+				</div>
+				<div class="project-detail">
+					<p>
+						At Fundacion Chile, a sustainability non-profit in Santiago, I was tasked with analyzing and creating interactive visualizations for the Life Cycle Assessment team. The target users: consumers and farmers across all of Chile. The key question to be answered: What are the most crucial hotspots in the production process? The goal of the visualization: to bring transparency and facilitate better decision-making.
+					</p>
+					</br>
+					<p>
+						The two graphs to the left represent Grape production in Chile. The first of the two graphs is seperated into two tabs. 1) Impact by Stage--simply use the single filter to see which Impact-Stage combinations are greater than the given threshold. 2) Stage by Family--first choose Stage, then use two filters to distinguish hotspots. Contingent Hotspot colors values are orange, while Absolute Hotspot colors values red. Contingnet Hotspots are defaulted to 5% and defines a Family Hotspot as any two Impacts within a Family greater than the (contingent) threshold value. Absolute Hotspots are defaulted to 10% and defines a Family Hotspot as any Impact greater than the (absolute) threshold value. Columns only show hotspots and will subset automatically given the threshold parameters.
+					</p>
+					</br>
+					<p>
+						The second graph uses a sankey diagram to show the flow of input to ouput. You can subset on EndPoint type and use the hotspot parameter to filter out small values.
+					</p>
+				</div>
+			</div>
+		</div>
+
+			<footer>
+				<h3 class="project-title"> Mahalo for Stopping by! </h3>
+                <a class="icons"  href="https://www.linkedin.com/in/carloliquido" target="_blank">
+                    <img src="img/linkedin_draw.png" style="width:60px;height:60px;border:0" >
+                </a>
+                <a class="icons" href="mailto:carlo_liquido@ischool.berkeley.edu">
+                    <img src="img/mail_draw.png" style="width:60px;height:60px;border:0">
+                </a>
+                <a class="icons" href="https://www.facebook.com/carlo.liquido" target="_blank">
+                    <img src="img/facebook_draw.png" style="width:60px;height:60px;border:0">
+                </a>
+                <a class="icons" href="https://github.com/koalaboy808" target="_blank">
+                    <img src="img/github_draw.png" style="width:60px;height:60px;border:0">
+                </a>
+			</footer>
+		
+	</body>
+</html>
